@@ -73,6 +73,25 @@
     </script>
 </head>
   <body>
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="bot-field" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="phone" />
+      <input type="text" name="company" />
+      <select name="service">
+        <option value="">Select primary interest</option>
+        <option value="growth-system">Complete Growth System</option>
+        <option value="infrastructure">Digital Infrastructure</option>
+        <option value="acquisition">Acquisition Channel Development</option>
+        <option value="automation">Lead Capture & Automation</option>
+        <option value="seo">SEO Services</option>
+        <option value="other">Other / Unsure</option>
+      </select>
+      <textarea name="message"></textarea>
+    </form>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
